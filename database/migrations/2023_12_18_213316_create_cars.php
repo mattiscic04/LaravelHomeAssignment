@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('model');
             $table->string('year');
             $table->string('salesperson_email');
-            $table->foreignId('manufacturer_id')->constrained('manufacturers'); // Assuming 'manufacturers' is the name of your manufacturers table
+            $table->foreignId('manufacturer_id')->constrained('manufacturers'); 
             $table->timestamps();
         });
     }

@@ -19,14 +19,15 @@ Route::get('/', function () {
 });
 
 Route::get('/cars', function(){
-    return "<h1>All cars</h1>";
+    return view('cars.index');
 })->name('cars.index');
 
 Route::get('/cars/create', function(){
-    return "<h1>Add new car</h1>";
+    return view('cars.create');
 })->name('cars.create');
 
 Route::get('/cars/{id}', function($id){
-    return App\Models\Car::find($id);
+    $car = App\Models\Car::find($id);
+    return view('cars.show', compact('car'));
 })->name('cars.show');
 

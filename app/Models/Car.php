@@ -11,5 +11,5 @@ class Car extends Model
 
     protected $table = 'cars'; 
 
-    protected $fillable = ['model', 'year', 'salesperson_email', 'manufacturers'];
+    protected $fillable = ['model', 'year', 'salesperson_email', 'manufacturer_id'];
 }

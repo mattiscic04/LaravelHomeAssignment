@@ -9,5 +9,7 @@ class Manufacture extends Model
 {
     use HasFactory;
 
+    protected $table = 'manufacturers'; 
+
     protected $fillable = ['name', 'address', 'phone'];
 }

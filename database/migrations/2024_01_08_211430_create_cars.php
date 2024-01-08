@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('model');
             $table->string('year');
             $table->string('salesperson_email');
-            $table->foreignId('manufacturer_id')->constrained('manufacturers'); 
+            $table->foreignId('manufacturer_id')->constrained('manufacturers')->onDelete('cascade'); 
             $table->timestamps();
         });
     }

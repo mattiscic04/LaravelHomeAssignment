@@ -67,7 +67,4 @@
         </div>
       </div>
     </main>
-
-<a href="{{route('cars.create') }}">Add new Car</a>
-<a href="{{route('cars.show', 1) }}">Show Cars</a>  
 @endsection

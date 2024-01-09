@@ -45,19 +45,21 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach ($cars as $car)
                     <tr>
-                      <th scope="row">1</th>
-                      <td>Alfred</td>
-                      <td>Kuhlman</td>
-                      <td>alfred@test.com</td>
-                      <td>Company one</td>
-                      <td width="150">
-                        <a href="show.html" class="btn btn-sm btn-circle btn-outline-info" title="Show"><i class="fa fa-eye"></i></a>
-                        <a href="form.html" class="btn btn-sm btn-circle btn-outline-secondary" title="Edit"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-sm btn-circle btn-outline-danger" title="Delete" onclick="confirm('Are you sure?')"><i class="fa fa-times"></i></a>
-                      </td>
+                        <th scope="row">{{ $car->id }}</th>
+                        <td>{{ $car->model }}</td>
+                        <td>{{ $car->year }}</td>
+                        <td>{{ $car->salesperson_email }}</td>
+                        <td>{{ $car->manufacturers->name }}</td>
+                        <td width="150">
+                            <a href="{{ route('cars.show', $car->id) }}" class="btn btn-sm btn-circle btn-outline-info" title="Show"><i class="fa fa-eye"></i></a>
+                            <a href="" class="btn btn-sm btn-circle btn-outline-secondary" title="Edit"><i class="fa fa-edit"></i></a>
+                            <a href="" class="btn btn-sm btn-circle btn-outline-danger" title="Delete" onclick="return confirm('Are you sure?')"><i class="fa fa-times"></i></a>
+                        </td>
                     </tr>
-                  </tbody>
+                    @endforeach
+                </tbody>
                 </table> 
               </div>
             </div>
@@ -67,5 +69,5 @@
     </main>
 
 <a href="{{route('cars.create') }}">Add new Car</a>
-<a href="{{route('cars.show', 1) }}">Show Cars</a> 
+<a href="{{route('cars.show', 1) }}">Show Cars</a>  
 @endsection

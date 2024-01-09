@@ -12,4 +12,9 @@ class Car extends Model
     protected $table = 'cars'; 
 
     protected $fillable = ['model', 'year', 'salesperson_email', 'manufacturer_id'];
+
+    public function manufacturers()
+    {
+        return $this->belongsTo(Manufacture::class, 'manufacturer_id');
+    }
 }

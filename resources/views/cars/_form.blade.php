@@ -1,42 +1,26 @@
 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group row">
-                      <label for="first_name" class="col-md-3 col-form-label">First Name</label>
+                      <label for="model" class="col-md-3 col-form-label">Model</label>
                       <div class="col-md-9">
-                        <input type="text" name="first_name" id="first_name" class="form-control is-invalid">
-                        <div class="invalid-feedback">
-                          Please choose a username.
-                        </div>
+                        <input type="text" name="model" id="model" class="form-control">
                       </div>
                     </div>
 
                     <div class="form-group row">
-                      <label for="last_name" class="col-md-3 col-form-label">Last Name</label>
+                      <label for="year" class="col-md-3 col-form-label">Year</label>
                       <div class="col-md-9">
-                        <input type="text" name="last_name" id="last_name" class="form-control">
+                        <input type="text" name="year" id="year" class="form-control">
                       </div>
                     </div>
 
                     <div class="form-group row">
-                      <label for="email" class="col-md-3 col-form-label">Email</label>
+                      <label for="salespersonemail" class="col-md-3 col-form-label">Salesperson Email</label>
                       <div class="col-md-9">
-                        <input type="text" name="email" id="email" class="form-control">
+                        <input type="text" name="salespersonemail" id="salespersonemail" class="form-control">
                       </div>
                     </div>
 
-                    <div class="form-group row">
-                      <label for="phone" class="col-md-3 col-form-label">Phone</label>
-                      <div class="col-md-9">
-                        <input type="text" name="phone" id="phone" class="form-control">
-                      </div>
-                    </div>
-
-                    <div class="form-group row">
-                      <label for="name" class="col-md-3 col-form-label">Address</label>
-                      <div class="col-md-9">
-                        <textarea name="address" id="address" rows="3" class="form-control"></textarea>
-                      </div>
-                    </div>
                     <div class="form-group row">
                       <label for="company_id" class="col-md-3 col-form-label">Company</label>
                       <div class="col-md-9">
@@ -46,7 +30,7 @@
                         @endforeach
                         </select>
                       </div>
-                    </div>
+                      
                     <hr>
                     <div class="form-group row mb-0">
                       <div class="col-md-9 offset-md-3">

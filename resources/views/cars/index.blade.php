@@ -28,6 +28,9 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @if ($success = session('success'))
+                      <div class="alert alert-success">{{ $success }}</div>
+                    @endif
                     @foreach ($cars as $car)
                     <tr>
                         <th scope="row">{{ $car->id }}</th>

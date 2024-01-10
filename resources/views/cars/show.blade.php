@@ -48,7 +48,7 @@
                                 @csrf
                                 <button type="submit" class="btn-delete btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this car?')">Delete</button>
                             </form>
-                          <a href="{{route('cars.index')}}" class="btn btn-outline-secondary" title="Delete">Cancel</a>
+                          <a href="{{route('cars.index')}}" class="btn btn-outline-secondary">Cancel</a>
                       </div>
                     </div>
                   </div>

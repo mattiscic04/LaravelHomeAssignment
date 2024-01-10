@@ -23,7 +23,7 @@
                       <th scope="col">Model</th>
                       <th scope="col">Year</th>
                       <th scope="col">Salesperson Email</th>
-                      <th scope="col">Manufactures</th>
+                      <th scope="col">Manufacturers</th>
                       <th scope="col">Actions</th>
                     </tr>
                   </thead>

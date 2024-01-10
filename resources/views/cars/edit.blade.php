@@ -7,10 +7,11 @@
           <div class="col-md-8">
             <div class="card">
               <div class="card-header card-title">
-                <strong>Add New Car</strong>
+                <strong>Edit Car</strong>
               </div>           
               <div class="card-body">
-                <form action="{{ route('cars.store') }}" method="POST">
+                <form action="{{ route('cars.update', $car->id) }}" method="POST">
+                  @method('PUT')
                 @csrf
                 @include('cars._form')
                 </form>
